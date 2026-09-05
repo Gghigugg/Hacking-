@@ -1,11 +1,76 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#05050A">
-    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal" android:padding="24dp">
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45dp" android:text="SAYRA AI" android:textColor="#FFFFFF" android:textSize="30sp" android:textStyle="bold" />
-        <TextView android:id="@+id/statusText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Just Say It." android:textColor="#AFA9C8" android:textSize="16sp" />
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#05050A">
+
+    <View android:layout_width="260dp" android:layout_height="260dp" android:layout_gravity="top|center_horizontal" android:layout_marginTop="90dp" android:alpha="0.18" android:background="@drawable/sayra_orb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:text="SAYRA AI"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.08" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="Just Say It."
+            android:textColor="#BDB5D8"
+            android:textSize="15sp" />
+
         <Space android:layout_width="1dp" android:layout_height="0dp" android:layout_weight="1" />
-        <Button android:id="@+id/micButton" android:layout_width="190dp" android:layout_height="190dp" android:text="🎙\nTAP TO TALK" android:textSize="18sp" android:textColor="#FFFFFF" android:backgroundTint="#6C35FF" />
-        <TextView android:id="@+id/resultText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:gravity="center" android:text="Tap the glass orb and speak" android:textColor="#FFFFFF" android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="18dp"
+            android:background="@drawable/sayra_glass_card">
+
+            <Button
+                android:id="@+id/micButton"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:text="🎙\nTAP TO TALK"
+                android:textSize="17sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/sayra_orb"
+                android:stateListAnimator="@null" />
+
+            <TextView
+                android:id="@+id/resultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:gravity="center"
+                android:text="Tap the glass orb and speak"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </LinearLayout>
+
         <Space android:layout_width="1dp" android:layout_height="0dp" android:layout_weight="1" />
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="25dp" android:text="AI • VOICE • SMART ASSISTANT" android:textColor="#77718F" android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:text="AI  •  VOICE  •  SMART ASSISTANT"
+            android:textColor="#77718F"
+            android:textSize="11sp"
+            android:letterSpacing="0.08" />
     </LinearLayout>
 </FrameLayout>
