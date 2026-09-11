@@ -7,7 +7,7 @@
 </head>
 <body><main class="app">
 <header class="topbar glass"><div class="brand"><span class="brand-dot"></span><span>LAGLAB</span></div><span class="status" id="status">READY</span></header>
-<section class="hero"><p class="eyebrow">BROWSER DEVICE STRESS TEST</p><h1>Push your device.<br><span>Find its limit.</span></h1><p class="sub">Rotate the dial to raise the load. Watch your browser's real-time graphics performance react.</p></section>
+<section class="hero"><p class="eyebrow">BROWSER DEVICE STRESS TEST</p><h1>Push your device.<br><span>Find its limit.</span></h1><p class="sub">Rotate the dial to raise the load. Watch real-time graphics performance react under a browser-only GPU and CPU workload.</p></section>
 <section class="test-card glass">
 <div class="dial-wrap" id="dialWrap"><div class="dial-glow"></div><canvas id="dialCanvas" width="360" height="360"></canvas><div class="dial-center"><span class="level-label">LOAD</span><strong id="level">0</strong><span>/ 10</span></div></div>
 <input id="load" type="range" min="0" max="10" value="0" aria-label="Stress level">
@@ -16,5 +16,5 @@
 <div class="actions"><button id="start" class="primary">START TEST</button><button id="stop" class="secondary" disabled>STOP</button></div>
 <p class="note">The workload is temporary and page-bound. It stops when you stop the test, switch away, or close the tab.</p></section>
 <section class="result glass"><div><span>PEAK LEVEL</span><b id="peakLevel">—</b></div><div><span>BEST FPS</span><b id="bestFps">—</b></div><div><span>PERFORMANCE</span><b id="score">—</b></div></section>
-<section class="scene glass" id="scene"><canvas id="stressCanvas"></canvas><div class="scene-overlay"><span id="sceneText">READY FOR TEST</span></div></section>
-</main><script src="app.js"></script></body></html>
+<section class="scene glass" id="scene"><canvas id="stressCanvas"></canvas><canvas id="glCanvas"></canvas><div class="scene-overlay"><span id="sceneText">READY FOR TEST</span></div></section>
+</main><script src="app.js"></script><script src="webgl.js"></script></body></html>
